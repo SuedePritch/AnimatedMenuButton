@@ -8,6 +8,6 @@ Heading color can be changed in Navbar.css
 
 Menu color can be changed in Menu.css
 
-Hamburger color and stroke width can be changed in HamburgerMenu.scss
+Hamburger color and stroke width can be changed in MenuHamburger.scss
 
 ![](AnimatedMenu.gif)
