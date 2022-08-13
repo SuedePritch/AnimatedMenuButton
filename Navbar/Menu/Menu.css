@@ -1,0 +1,53 @@
+/* 
+Menu styling
+Hides menu on pageload 
+*/
+.Menu{
+    position: absolute;
+    right:-200px;
+    top:0;
+    padding:3rem;
+    background: hsl(0, 64%, 78%);
+    border-bottom-left-radius: 15px;
+}
+
+
+
+/* Slides menu open*/
+.Menu.Open{
+    animation: menuOpenAnimation 1000ms ease forwards;
+}
+@keyframes menuOpenAnimation {
+    from{
+        transform: translateX(0);
+    }
+    to{
+        transform: translateX(-200px);
+    }
+}
+
+
+/* Slides menu closed */
+.Menu.Closed{
+    animation: menuClosedAnimation 2000ms ease forwards;
+    /* transform: translateX(0); */
+}
+@keyframes menuClosedAnimation {
+    from{
+        transform: translateX(-200px);
+    }
+    to{
+        transform: translateX(0);
+    }
+}
+
+
+/* 
+styling for the list items
+setup to be flexible as most common use would be links
+*/
+.menu-ul > *{
+    padding:1rem;
+    list-style: none;
+    
+}
